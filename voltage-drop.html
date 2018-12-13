@@ -1,0 +1,75 @@
+<html>
+
+    <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script type="text/javascript" src="temp-conversion.js"></script>
+    </head>
+
+    <body>
+    <div class="container" border="1">
+    <h1>Simple Temperature Converter</h1>
+
+       <form name="tempForm">
+            <label for="temp">Temperature:</label>
+            <input type="text" id="temp"><br>
+
+            <input type="radio" name="choice" value="fahrenheit" checked />Convert to Fahrenheit <br>
+            <input type="radio" name="choice" value="celsius">Convert to Celsius  <br>
+
+            <label for="resultField">Result: </label>
+            <input type="text" id="resultField"><br>
+
+            <input type="button" value="Convert" onclick="processForm()">
+        </form>
+     </div>
+     
+     <div class="container" border="1">
+    <h1>Voltage Drop Calculator</h1>
+
+       <form name="tempForm">
+            <label for="temp">BUC Power Supply Voltage:</label>
+            <input type="text" id="voltage">VDC<br>
+            
+            <label for="temp">Cable Length:</label>
+            <input type="text" id="cable_length">ft<br>
+
+            <label for="temp">Inner Resistance plus Outer Resistance:</label>
+            <input type="text" id="total_ressitance"> ohms<br>
+
+
+            <input type="radio" name="choice" value="fahrenheit" checked />Convert to Fahrenheit <br>
+            <input type="radio" name="choice" value="celsius">Convert to Celsius  <br>
+
+            <label for="resultField">Result: </label>
+            <input type="text" id="resultField"><br>
+
+            <input type="button" value="Convert" onclick="processForm()">
+        </form>
+        <h3>Vdrop = I*R = I * (Ri + Ro) = I * ( (cable_length * Ri/length) + (cable_length * Ri/length))</h3>
+        <p>3.6 ohm <br>
+v = ir <br>
+48 = i <br>
+
+80w @ 48 VDC -> Current of 1.67 amps <br>
+
+resistance 36.1 ohm / km <br>
+
+0.122 km * 36.1 ohm / km = 4.4 ohms <br>
+
+49
+
+80W of power consumption at 48VDC -> 1.7 amps <br>
+
+<b>Vdrop = I*R = I * (Ri + Ro) = I * ( (cable_length * Ri/length) + (cable_length * Ri/length))</b>
+
+<br>
+400 ft = 0.12192 km
+<br>
+1.67 * ( (0.12192 km * 36.091 ohm/km) + (0.12192 km * 9.843 ohm/km)<br>
+1.67 * (4.4 ohms + 1.2 ohms) <br>
+        </p>
+        
+        
+     </div>
+    </body>
+</html>
